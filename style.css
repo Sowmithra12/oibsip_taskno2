@@ -1,0 +1,129 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #a8e6cf, #dcedc1); /* Cricket ground theme */
+  color: #1b5e20;
+  line-height: 1.6;
+  padding: 20px;
+}
+h1 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 100, 0, 0.2);
+  text-align: center;
+  border: 3px solid #4caf50;
+  position: relative;
+}
+
+/* Cricket emoji background */
+.container::before {
+  content: "🏏";
+  font-size: 4rem;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+.container::after {
+  content: "🏆";
+  font-size: 4rem;
+  position: absolute;
+  top: -30px;
+  right: 10px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.8rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 1px #a5d6a7;
+}
+
+/* Image */
+.tribute-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  border: 2px solid #388e3c;
+}
+
+/* Intro Paragraph */
+.intro {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+/* Quote Block */
+.quote {
+  margin: 20px auto;
+  padding: 15px 20px;
+  font-style: italic;
+  background-color: #f1f8e9;
+  border-left: 5px solid #81c784;
+  max-width: 600px;
+  color: #33691e;
+  border-radius: 8px;
+}
+.quote:before {
+  content: "“";
+  font-size: 2rem;
+  vertical-align: top;
+  margin-right: 5px;
+}
+.quote:after {
+  content: "”";
+  font-size: 2rem;
+  vertical-align: bottom;
+  margin-left: 5px;
+}
+
+/* Paragraphs */
+.container p:not(.intro):not(.quote) {
+  text-align: justify;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Scoreboard Effect on Hover */
+.tribute-img:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  border-color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .intro {
+    font-size: 1.1rem;
+  }
+  .quote {
+    margin: 15px;
+    padding: 10px;
+  }
+}
