@@ -2,7 +2,7 @@
 
 A heartfelt tribute page dedicated to **Mahendra Singh Dhoni**, the legendary former Indian cricket captain known as "Captain Cool". This simple and elegant web page is designed using **HTML** and **CSS**, demonstrating basic web design and content structuring.
 
----
+---http://127.0.0.1:5500/index.html
 
 ## 🌟 Highlights
 
